@@ -1,20 +1,20 @@
 "use strict";
 
 (function($) {
-  $(function() {
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.nav-dropdown').toggle();
-      $('.dropdown').not($(this).siblings()).hide();
+  document.querySelector(function() {
+    document.querySelector('nav ul li a:not(:only-child)').click(function(e) {
+      document.querySelector(this).siblings('.nav-dropdown').toggle();
+      document.querySelector('.dropdown').not(document.querySelector(this).siblings()).hide();
       e.stopPropagation();
     });
-    $('html').click(function() {
-      $('.nav-dropdown').hide();
+    document.querySelector('html').click(function() {
+      document.querySelector('.nav-dropdown').hide();
     });
-    $('#nav-toggle').click(function() {
-      $('nav ul').slideToggle();
+    document.querySelector('#nav-toggle').click(function() {
+      document.querySelector('nav ul').slideToggle();
     });
-    $('#nav-toggle').on('click', function() {
+    document.querySelector('#nav-toggle').addEventListener('click', function() {
       this.classList.toggle('active');
     });
   });
-})(jQuery);
+})
