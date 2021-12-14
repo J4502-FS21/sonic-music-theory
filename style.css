@@ -3,11 +3,7 @@ body {
 	padding: 0;
 	background-color: #09c6f9;
 	background-image: linear-gradient(315deg, #09c6f9 0%, #255cc3 80%);
-  overflow-x: hidden;
-}
-
-* {
-	font-family: 'Righteous', cursive;
+	overflow-x: hidden;
 }
 
 .nav-bar {
@@ -87,55 +83,6 @@ nav ul li ul li a {
   background: #DD374F;
   height: 70px;
   width: 70px;
-}
-
-@media only screen and (max-width: 798px) {
-  .nav-mobile {
-    display: block;
-  }
-  nav {
-    width: 100%;
-    padding: 100px 0 15px;
-  }
-  nav ul {
-    display: none;
-  }
-  nav ul li {
-    float: none;
-  }
-  nav ul li a {
-    padding: 15px;
-    line-height: 70px;
-    padding-left: 25%;
-  }
-  nav ul li a:hover,
-  nav ul li a:visited:hover {
-    background-size: 200px;
-    background-position: 100px
-  }
-  nav ul li ul li a {
-    padding-left: 30%;
-  }
-	.brand a img {
-		max-height: 80px;
-		margin-top: 5px;
-	}
-  .fx-wrap {
-    margin-left: 10px;
-  }
-  .fx-wrap .card {
-    width: 300px;
-    height: 350px;
-  }
-  .image img {
-    width: 280px;
-    height: 350px;
-  }
-}
-@media screen and (min-width: 799px) {
-  .nav-list {
-    display: block !important;
-  }
 }
 
 #nav-toggle {
