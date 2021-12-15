@@ -89,50 +89,6 @@ nav ul li ul li a {
   width: 70px;
 }
 
-@media only screen and (max-width: 798px) {
-  .nav-mobile {
-    display: block;
-  }
-  nav {
-    width: 100%;
-    padding: 100px 0 15px;
-  }
-  nav ul {
-    display: none;
-  }
-  nav ul li {
-    float: none;
-  }
-  nav ul li a {
-    padding: 15px;
-    line-height: 70px;
-    padding-left: 25%;
-  }
-  nav ul li a:hover,
-  nav ul li a:visited:hover {
-    background-size: 200px;
-    background-position: 100px
-  }
-  nav ul li ul li a {
-    padding-left: 30%;
-  }
-	.brand a img {
-		max-height: 80px;
-		margin-top: 5px;
-	}
-  .fx-wrap {
-    margin-left: 10px;
-  }
-  .fx-wrap .card {
-    width: 300px;
-    height: 350px;
-  }
-  .image img {
-    width: 280px;
-    height: 350px;
-  }
-}
-
 
 #nav-toggle {
   position: absolute;
@@ -462,6 +418,12 @@ nav ul li ul li a {
 		margin-left: 60px;
 		height: 300px;
 	}
+	.description h1 {
+	  font-size: 50px;
+	}
+	.description p {
+	  font-size: 18px;
+	}
 }
 @media only screen and (max-width: 375px){
 	.videoWrapper iframe {
@@ -473,19 +435,22 @@ nav ul li ul li a {
 	.fx-wrap .card {
     width: 375px;
     height: 700px;
-}
+	}
 	.image img {
 		height: 700px;
 		width: 300px;
 	}
-	.description {
-		margin: 40px;
-	}
 	.description h1 {
 		font-size: 40px;
+		text-align: center;
+		margin-left: -10px;
 	}
 	.description p {
 		font-size: 15px;}
+
+		iframe {
+			width:100%;
+		}
 }
 @media screen and (min-width: 799px)  {
   .nav-list {
@@ -495,11 +460,11 @@ nav ul li ul li a {
 
 @font-face {
   font-family:'pixeled';
-  src: url("Pixeled.ttf") format('pixeled');
+  src: url("https://https://github.com/J4502-FS21/sonic-music-theory/Pixeled.ttf") format('pixeled');
 }
 @font-face {
   font-family:'nisesegasonic';
-  src: url("NiseSegaSonic.TTF") format('nisesegasonic');
+  src: url("https://https://github.com/J4502-FS21/sonic-music-theory/NiseSegaSonic.TTF") format('nisesegasonic');
 }
 @font-face {
 	font-family: 'Readex Pro', sans-serif;
