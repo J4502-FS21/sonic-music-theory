@@ -421,11 +421,12 @@ nav ul li ul li a {
 
 @font-face {
   font-family: 'pixeled';
-  src: url("../fonts/Pixeled.ttf");
+  src: url("Pixeled.ttf") format('pixeled');
 }
 @font-face {
   font-family: 'nisesegasonic';
-  src: url("../fonts/NiseSegaSonic.TTF");
+  src: url("NiseSegaSonic.TTF") format('nisesegasonic');
+}
 }
 @font-face {
 	font-family: 'Readex Pro', sans-serif;
