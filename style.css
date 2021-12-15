@@ -2,8 +2,11 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #09c6f9;
-	background-image: linear-gradient(315deg, #09c6f9 0%, #255cc3 80%);
+	background-image: linear-gradient(315deg, #09c6f9 0%, #255cc3 100%);
 	overflow-x: hidden;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .nav-bar {
