@@ -3,16 +3,17 @@ body {
 	padding: 0;
 	background-color: #09c6f9;
 	background-image: linear-gradient(315deg, #09c6f9 0%, #255cc3 100%);
-	overflow-x: hidden;
+  overflow-x: hidden;
 	height: 100%;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 .nav-bar {
   height: 110px;
   background: #DD374F;
-  padding-top: 10px;
+  padding-top: 20px;
+	width: 100%;
 }
 .brand {
   position: absolute;
@@ -88,6 +89,51 @@ nav ul li ul li a {
   width: 70px;
 }
 
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    padding: 100px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 70px;
+    padding-left: 25%;
+  }
+  nav ul li a:hover,
+  nav ul li a:visited:hover {
+    background-size: 200px;
+    background-position: 100px
+  }
+  nav ul li ul li a {
+    padding-left: 30%;
+  }
+	.brand a img {
+		max-height: 80px;
+		margin-top: 5px;
+	}
+  .fx-wrap {
+    margin-left: 10px;
+  }
+  .fx-wrap .card {
+    width: 300px;
+    height: 350px;
+  }
+  .image img {
+    width: 280px;
+    height: 350px;
+  }
+}
+
+
 #nav-toggle {
   position: absolute;
   left: 18px;
@@ -133,7 +179,7 @@ nav ul li ul li a {
 }
 .description h1 {
   font-family: 'nisesegasonic';
-  font-size: 50px;
+  font-size: 75px;
   text-align: center;
   color: #FEDF37;
 }
@@ -334,6 +380,7 @@ nav ul li ul li a {
 	position: relative;
 	padding-top: 25px;
 	height: 0;
+	background-size: contain;
 }
 .videoWrapper iframe {
 	position: absolute;
@@ -412,25 +459,24 @@ nav ul li ul li a {
     height: 200px;
   }
 	.videoWrapper iframe {
-	margin-left: 60px;
-	height: 300px;
+		margin-left: 60px;
+		height: 300px;
 	}
 }
-
 @media only screen and (max-width: 375px){
 	.videoWrapper iframe {
 		margin-left: 45px;
 	}
 	.fx-wrap {
-		margin-left: 15px;
-		margin-right: 15px;
+		margin-left: 0px;
 	}
 	.fx-wrap .card {
-		width: 400px;
-		height: 450px;
-    }
+    width: 375px;
+    height: 700px;
+}
 	.image img {
-		height: 450px;
+		height: 700px;
+		width: 300px;
 	}
 	.description {
 		margin: 40px;
@@ -438,25 +484,22 @@ nav ul li ul li a {
 	.description h1 {
 		font-size: 40px;
 	}
-	
-.description p {
-font-size: 15px;
+	.description p {
+		font-size: 15px;}
 }
-}
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 375px) and (max-width: 799px)  {
   .nav-list {
     display: block !important;
   }
 }
 
 @font-face {
-  font-family: 'pixeled';
+  font-family:'pixeled';
   src: url("Pixeled.ttf") format('pixeled');
 }
 @font-face {
-  font-family: 'nisesegasonic';
+  font-family:'nisesegasonic';
   src: url("NiseSegaSonic.TTF") format('nisesegasonic');
-}
 }
 @font-face {
 	font-family: 'Readex Pro', sans-serif;
@@ -466,3 +509,4 @@ font-size: 15px;
   font-family: 'Bree Serif', serif;
   src: url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 }
+
